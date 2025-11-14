@@ -29,6 +29,74 @@ int main() {
 
   // Área para entrada de dados
 
+   // Cadastro da Carta 1
+     printf("=== Cadastro da Carta 1 ===\n");
+    
+    printf("Digite o Estado (A-H): ");
+    scanf(" %c", &estado1);
+    
+    printf("Digite o Código da Carta (ex: A01): ");
+    scanf("%s", codigo1);
+    
+    getchar(); // Limpa o buffer
+    
+    printf("Digite o Nome da Cidade: ");
+    fgets(cidade1, sizeof(cidade1), stdin);
+    // Remove o \n do final
+    for(int i = 0; cidade1[i] != '\0'; i++) {
+        if(cidade1[i] == '\n') {
+            cidade1[i] = '\0';
+            break;
+        }
+    }
+    
+    printf("Digite a População: ");
+    scanf("%d", &populacao1);
+    
+    printf("Digite a Área (em km²): ");
+    scanf("%f", &area1);
+    
+    printf("Digite o PIB (em bilhões): ");
+    scanf("%f", &pib1);
+    
+    printf("Digite o Número de Pontos Turísticos: ");
+    scanf("%d", &pontos_turisticos1);
+    
+    printf("\n");
+    
+    // Cadastro da Carta 2
+    printf("=== Cadastro da Carta 2 ===\n");
+    
+    printf("Digite o Estado (A-H): ");
+    scanf(" %c", &estado2);
+    
+    printf("Digite o Código da Carta (ex: B02): ");
+    scanf("%s", codigo2);
+    
+    getchar(); // Limpa o buffer
+    
+    printf("Digite o Nome da Cidade: ");
+    fgets(cidade2, sizeof(cidade2), stdin);
+    // Remove o \n do final
+    for(int i = 0; cidade2[i] != '\0'; i++) {
+        if(cidade2[i] == '\n') {
+            cidade2[i] = '\0';
+            break;
+        }
+    }
+    
+    printf("Digite a População: ");
+    scanf("%d", &populacao2);
+    
+    printf("Digite a Área (em km²): ");
+    scanf("%f", &area2);
+    
+    printf("Digite o PIB (em bilhões): ");
+    scanf("%f", &pib2);
+    
+    printf("Digite o Número de Pontos Turísticos: ");
+    scanf("%d", &pontos_turisticos2);
+
   // Área para exibição dos dados da cidade
 
 return 0;
